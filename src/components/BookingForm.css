@@ -1,0 +1,66 @@
+.reservation-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.column {
+  flex-basis: calc(50% - 1rem);
+  margin-right: 1rem;
+}
+
+.column:last-child {
+  margin-right: 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 1rem;
+}
+label p{
+  margin-bottom: 0.3rem;
+}
+
+
+input, select{
+  padding: 10px!important;
+  font-size: 16px;
+}
+
+input,
+select,
+textarea {
+  border-radius: 5px;
+  padding: 0.3rem 1rem;
+  border: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+
+button {
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.full-width{
+  flex-basis: 100%
+}
+
+.submit-container{
+  margin-bottom: 3rem;
+}
+button:hover {
+  background-color: #388e3c;
+}
+
+@media (max-width: 768px) {
+  .column {
+    flex-basis: 100%;
+    margin-right: 0;
+  }
+}
